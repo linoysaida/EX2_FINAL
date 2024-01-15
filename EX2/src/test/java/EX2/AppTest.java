@@ -1,38 +1,52 @@
 package EX2;
 
+
+import junit.framework.Assert;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
 
-/**
- * Unit test for simple App.
- */
 public class AppTest 
     extends TestCase
 {
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public AppTest( String testName )
-    {
-        super( testName );
-    }
-
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( AppTest.class );
-    }
-
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
-    }
+	
+	 public void ex_1_min_c()
+	    {
+	       String res=App.numberToChar(70) ;
+	       String ex="c";
+	       Assert.assertEquals(ex, res);
+	    }
+	    
+	    
+	    public void ex_1_min1_c()
+	    {
+	       String res=App.numberToChar(71) ;
+	       String ex="c";
+	       Assert.assertEquals(ex, res);
+	    }
+	    
+	    
+	    public void ex_1_nom_c()
+	    {
+	       String res=App.numberToChar(75) ;
+	       String ex="c";
+	       Assert.assertEquals(ex, res);
+	    }
+	    
+	    
+	    public void ex_1_max_c()
+	    {
+	       String res=App.numberToChar(79) ;
+	       String ex="c";
+	       Assert.assertEquals(ex, res);
+	    }
+	    
+	    
+	    public void ex_1_max1_c()
+	    {
+	        String res=App.numberToChar(78) ;
+	        String ex="c";
+	        Assert.assertEquals(ex, res);
+	     }
+	    
 }
